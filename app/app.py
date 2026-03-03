@@ -149,13 +149,13 @@ if page == "🏠 Home":
     st.markdown("### About This Project")
     st.write(
         """
-        **Dataset:** [Describe your dataset]
+        **Dataset:** Md Vessel jobs
 
-        **Problem Statement:** [What are you predicting and why?]
+        **Problem Statement:** We are trying to predict duration of vessel jobs (regression) and categorize them into bins (classification).
 
         **Models Used:**
-        - Regression: [Your regression model type]
-        - Classification: [Your classification model type]
+        - Regression: GradientBoostingRegressor
+        - Classification: GradientBoostingClassifier
         """
     )
 
