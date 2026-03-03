@@ -114,15 +114,15 @@ st.sidebar.markdown("---")
 st.sidebar.markdown("### About")
 st.sidebar.info(
     """
-    This app deploys machine learning models trained on [YOUR DATASET].
+    This app deploys machine learning models trained on Md Vessel jobs.
 
-    - **Regression**: Predicts [YOUR TARGET]
-    - **Classification**: Predicts [YOUR CATEGORIES]
+    - **Regression**: Predicts the duration of vessel jobs
+    - **Classification**: Predicts the category of vessel jobs
     """
 )
 # TODO: UPDATE YOUR NAME HERE! This shows visitors who built this app.
 st.sidebar.markdown("**Built by:** Erick Lanford")
-st.sidebar.markdown("[GitHub Repo](https://github.com/YOUR-USERNAME/YOUR-REPO)")
+st.sidebar.markdown("[GitHub Repo](https://github.com/ericklanford/individual-capstone-ericklanford/tree/master)")
 
 
 # =============================================================================
