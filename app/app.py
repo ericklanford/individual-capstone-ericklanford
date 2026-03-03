@@ -295,16 +295,25 @@ elif page == "🏷️ Classification Model":
         # Display result with color coding
         # TODO: Customize colors based on your categories
         color_map = {
-            'Low': '🔴',
+            'Short': '🔴',
             'Medium': '🟡',
-            'High': '🟢'
+            'Long': '🟢'
         }
         emoji = color_map.get(predicted_label, '🔵')
 
         st.success(f"### Predicted Category: {emoji} {predicted_label}")
 
-        # TODO: Add interpretation
-        # st.write(f"This means... [interpretation]")
+        
+        if predicted_label == 'Short':
+            interpretation = "This vessel job is predicted to have a short duration, likely under 6 hours."
+        elif predicted_label == 'Medium':
+            interpretation = "This vessel job is predicted to have a medium duration, likely between 6 and 11 hours."
+        elif predicted_label == 'Long':
+            interpretation = "This vessel job is predicted to have a long duration, likely over 11 hours."
+        else:
+            interpretation = f"The model predicts that this vessel job will be categorized as '{predicted_label}'."
+        
+        st.write(interpretation)
 
         # Show input summary
         with st.expander("View Input Summary"):
